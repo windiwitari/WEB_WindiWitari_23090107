@@ -1,0 +1,173 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #e3e6f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #3b5998;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #5d5d5d;
+            margin-top: 10px;
+        }
+
+        .medsos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #3b5998;
+            color: white;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #4b70d4;
+            transform: scale(1.1);
+        }
+
+        .button img {
+            width: 24px;
+            height: 24px;
+            filter: invert(1);
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-top: 15px;
+            font-size: 1em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            margin-top: 5px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button {
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <div class="medsos">
+        <a href="https://www.facebook.com/windi.witari.1/" target="_blank" class="button">
+            <img src="https://img.icons8.com/?size=30&id=118497&format=png&color=000000" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/windiwitarii/" target="_blank" class="button">
+            <img src="https://img.icons8.com/?size=30&id=32323&format=png&color=000000" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/windi-witari-72560a285/?originalSubdomain=id" target="_blank" class="button">
+            <img src="https://img.icons8.com/?size=30&id=13930&format=png&color=000000" alt="LinkedIn">
+        </a>
+    </div>
+
+    <section class="contact-form">
+        <form action="#" method="post">
+            <p>Hubungi kami untuk informasi lebih lanjut atau pertanyaan.</p>
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+</body>
+</html>

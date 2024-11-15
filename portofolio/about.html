@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Tentang Saya - Programmer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #3498db;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .skill {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 20px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .skill:hover {
+            background-color: #2980b9;
+        }
+
+        .contact {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #3b5998;
+            color: white;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #4b70d4;
+            transform: scale(1.1);
+        }
+
+        .button img {
+            width: 24px;
+            height: 24px;
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="profil.jpeg" alt="Foto Profil" class="profile-img">
+        <h1>Windi Witari</h1>
+        <h2>Informatics Engineering</h2>
+        
+        <p>
+            Hai! Saya seorang programmer yang berdedikasi dan bersemangat, memiliki pengalaman luas dalam pengembangan web dan aplikasi. 
+            Saya tertarik untuk memecahkan masalah kompleks, menerapkan solusi yang efisien, dan terus belajar tentang teknologi baru.
+            Dengan latar belakang di berbagai bahasa pemrograman dan framework, saya berusaha menciptakan produk digital yang tidak hanya berfungsi tetapi juga memberikan dampak positif bagi pengguna.
+        </p>
+        
+        <p>
+            Saya percaya bahwa teknologi dapat mengubah dunia menjadi tempat yang lebih baik, dan saya senang berkontribusi dalam perjalanan tersebut.
+            Ketika tidak sedang mengoding, saya menikmati waktu membaca artikel teknologi terbaru, belajar tentang kecerdasan buatan, atau bermain musik untuk relaksasi.
+        </p>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+        </div>
+
+        <div class="contact">
+            <a href="https://www.facebook.com/windi.witari.1/" target="_blank" class="button">
+                <img src="https://img.icons8.com/?size=30&id=118497&format=png&color=000000" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/windiwitarii/" target="_blank" class="button">
+                <img src="https://img.icons8.com/?size=30&id=32323&format=png&color=000000" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/windi-witari-72560a285/?originalSubdomain=id" target="_blank" class="button">
+                <img src="https://img.icons8.com/?size=30&id=13930&format=png&color=000000" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

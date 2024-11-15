@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Program</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        body {
+            background-color: #FFFBEB;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(
+                to right,
+                rgba(200, 107, 142, 1),
+                rgba(218, 105, 250, 1),
+                rgba(110, 125, 253, 1)
+            );
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+            font-family: 'Trebuchet MS';
+            margin-left: 25px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .header-right {
+            font-size: 15px;
+            font-family: 'Times New Roman';
+            margin-right: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-right a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .header-right a:hover {
+            color: #FFEB99;
+        }
+
+        .programs {
+            margin-top: 30px;
+        }
+
+        .programs h2 {
+            font-size: 2em;
+            color: #FF6363;
+            margin-bottom: 20px;
+        }
+
+        .program-card {
+            background-color: #FFEB99;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            display: inline-block;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .program-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .program-card h3 {
+            font-size: 1.5em;
+            color: #FF6363;
+            margin: 10px 0;
+        }
+
+        .program-card p {
+            font-size: 1em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #FFABAB;
+            padding: 15px;
+            color: #fff;
+            margin-top: 80px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>KB Paud Bahtera</h1>
+            <div class="header-right">
+                <a href="home.html">Home</a>
+                <a href="about_paud.html">About</a>
+                <a href="kontak_paud.html">Contact</a>
+                <a href="program.html">Program</a>
+            </div>
+        </header>
+
+        <section class="programs">
+            <h2>Program Kami</h2>
+            <div class="program-card">
+                <img src="hitung.webp" alt="Belajar Berhitung">
+                <h3>Belajar Berhitung</h3>
+                <p>Mengenalkan angka dan cara berhitung dasar dengan cara yang menyenangkan.</p>
+            </div>
+            <div class="program-card">
+                <img src="kreatif.webp" alt="Bermain Kreatif">
+                <h3>Bermain Kreatif</h3>
+                <p>Kegiatan seni dan kerajinan yang membantu anak-anak mengekspresikan kreativitas mereka.</p>
+            </div>
+            <div class="program-card">
+                <img src="cerita.webp" alt="Bercerita">
+                <h3>Bercerita</h3>
+                <p>Mengembangkan imajinasi dan kemampuan bahasa melalui cerita yang menarik.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Kelompok Bermain Paud Bahtera. Semua Hak Dilindungi.</p>
+        </footer>
+
+    </body>
+</html>

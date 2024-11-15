@@ -1,0 +1,244 @@
+<html>
+<head>
+    <title>Kontak Paud Bahtera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        body {
+            background-color: #FFFBEB;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(
+                to right,
+                rgba(200, 107, 142, 1),
+                rgba(218, 105, 250, 1),
+                rgba(110, 125, 253, 1)
+            );
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+            font-family: 'Trebuchet MS';
+            margin-left: 25px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .header-right {
+            font-size: 15px;
+            font-family: 'Times New Roman';
+            margin-right: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-right a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .header-right a:hover {
+            color: #FFEB99;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            background-color: #FFCCB6;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-size: 1.1em;
+            margin-top: 15px;
+            color: #FF6363;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 1em;
+            border: 2px solid #FF6363;
+            border-radius: 8px;
+            outline: none;
+            width: 100%;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 12px;
+            font-size: 1.1em;
+            background-color: #FF6363;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #E94E4E;
+        }
+
+        .info-section {
+            background-color: #FFEB99;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .address {
+            margin-bottom: 30px;
+        }
+
+        .address h3 {
+            font-size: 1.3em;
+            color: #FF6363;
+            margin-bottom: 10px;
+        }
+
+        .address p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-icon {
+            color: #333;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #FFABAB;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .social-icon:hover {
+            background-color: #FF6363;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #FFABAB;
+            color: #fff;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KB Paud Bahtera</h1>
+        <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="about_paud.html">About</a>
+            <a href="kontak_paud.html">Contact</a>
+            <a href="program.html">Program</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subjek</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <!-- Information Section (Address + Social Media) -->
+        <section class="info-section">
+            
+            <div class="address">
+            <br><br>  
+                <h3>Alamat PAUD Bahtera</h3>
+                <p>Bandasari, Kec. Dukuhturi, Kabupaten Tegal, Jawa Tengah</p>
+                <p>Telepon: 0819-0263-5425</p>
+                <p>Email: info@paudbahtera.sch.id</p>
+            </div>
+            <br><br><br>
+            <h3>Ikuti Kami</h3>
+            <br>
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">YouTube</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kelompok Bermain Paud Bahtera. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

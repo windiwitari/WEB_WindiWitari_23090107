@@ -1,0 +1,234 @@
+
+<html>
+<head>
+    <title>Home - Paud Bahtera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        body {
+            background-color: #FFFBEB;
+            color: #ff7c7c;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(
+                to right,
+                rgba(200, 107, 142, 1),
+                rgba(218, 105, 250, 1),
+                rgba(110, 125, 253, 1)
+            );
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+            font-family: 'Trebuchet MS';
+            margin-left: 25px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .header-right {
+            font-size: 15px;
+            font-family: 'Times New Roman';
+            margin-right: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-right a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .header-right a:hover {
+            color: #FFEB99;
+        }
+
+        .hero {
+            background: url('paud.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("paud.jpg");
+            background: rgba(250, 52, 184, 0.651);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        .hero-content h2 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #a318e4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .hero-content a:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FF6363;
+        }
+
+        button {
+            margin: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #df42b8;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background-color: #FFCCB6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            color: #FF6363;
+        }
+
+        .feature-card p {
+            margin-top: 10px;
+            text-align: justify;
+            font-size: 1em;
+            color: #333;
+        }
+
+
+        footer {
+            background-color: #FFABAB;
+            padding: 15px;
+            color: #fff;
+            margin-top: 80px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .hero {
+                height: 60vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>KB Paud Bahtera</h1>
+        <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="about_paud.html">About</a>
+            <a href="kontak_paud.html">Contact</a>
+            <a href="program.html">Program</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di </h2>
+            <h2>PAUD Bahtera</h2>
+            <a href="program.html">Lihat Program Kami</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Kenapa Memilih Kami?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Pendekatan Pembelajaran Unik</h3>
+                <p>Kami menggunakan metode bermain yang terstruktur untuk mengembangkan potensi anak secara holistik.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Guru Berpengalaman</h3>
+                <br>
+                <p>Dibimbing oleh guru-guru berpengalaman yang peduli dan berkomitmen mendukung perkembangan anak Anda.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Lingkungan yang Aman</h3>
+                <p>Kami menyediakan lingkungan yang aman dan nyaman untuk anak-anak bermain dan belajar.</p>
+            </div>
+        </div>
+    </section>
+    <section></script>
+            <h2 class= "section-title">Masih Ragu?</h2>
+            <p id="demo">Paud Bahtera tempat belajar sambil bermain yang aman, kreatif, dan penuh kasih sayang</p>
+            <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Klik disini!</button>
+    </script>
+    <footer>
+        <p>&copy; 2024 Kelompok Bermain Paud Bahtera. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
